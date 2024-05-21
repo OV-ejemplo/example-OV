@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: hsla(216, 22%, 95%, 1);
+    --foreground: hsla(222.2 84% 4.9%);
+    --current-foreground: hsla(0, 0%, 75%, 1);
+
+    --muted: hsla(210 40% 96.1%);
+    --muted-foreground: hsla(215.4 16.3% 46.9%);
+
+    --popover: hsla(0 0% 100%);
+    --popover-foreground: hsla(222.2 84% 4.9%);
+
+    --card: hsla(0 0% 100%);
+    --card-foreground: hsla(222.2 84% 4.9%);
+
+    --border: hsla(214.3 31.8% 91.4%);
+    --input: hsla(0, 0%, 70%);
+    --input-foreground: rgba(172, 180, 200, 0.527);
+    --checkbox-radioButton-shadow: rgba(
+      54,
+      135,
+      201,
+      0.295
+    ); /* shadow for input checkbox and radio button for generate a pressed effect */
+    --checkbox-radioButton-shadow-hover: hsla(
+      240,
+      5.88%,
+      10%,
+      0.08
+    ); /* shadow for input checkbox and radio button for generate a hover effect */
+
+    --primary: hsla(207, 58%, 50%, 1); /* buttons background default */
+    --primary-30: hsla(207, 58%, 50%, 0.185); /* opacity */
+    --primary-foreground: hsla(0, 0%, 100%, 1); /* buttons font color default */
+    --default-button-hover: hsla(
+      207,
+      71%,
+      81%
+    ); /* buttons background default */
+    --default-button-foreground-hover: hsla(
+      0,
+      0%,
+      26%,
+      1
+    ); /* buttons font color default */
+    --default-button-pressed: hsla(
+      207,
+      62%,
+      71%
+    ); /* buttons background default on press */
+    --default-button-foreground-pressed: hsla(
+      0,
+      0%,
+      100%,
+      1
+    ); /* buttons font color default on press */
+
+    --secondary: hsla(210 40% 96.1%);
+    --secondary-foreground: hsla(222.2 47.4% 11.2%);
+    --secondary-border: hsla(0 0% 70%);
+
+    --accent: hsla(222, 4%, 96%);
+    --accent-foreground: hsla(222.2 47.4% 11.2%);
+    --accent-pressed: hsla(221, 7%, 93%, 1);
+    --accent-disabled: hsla(223, 14%, 73%);
+
+    --destructive: hsla(0, 74%, 67%, 1); /* buttons background destructive */
+    --destructive-hover: hsl(
+      0,
+      82%,
+      74%
+    ); /* buttons background destructive hover */
+    --destructive-pressed: hsl(
+      0,
+      65%,
+      56%
+    ); /* buttons background destructive pressed */
+    --destructive-foreground: hsla(210 40% 98%);
+
+    --disabled: hsla(220, 5%, 89%, 1); /* buttons background disabled */
+    --disabled-foreground: hsla(
+      223,
+      14%,
+      73%,
+      1
+    ); /* buttons font color disabled */
+
+    --ring: hsla(215 20.2% 65.1%);
+
+    --radius: 0.5rem;
+    --tabs-hover: hsla(220, 13%, 91%, 1);
+
+    --gray-dark: hsla(0, 0%, 32%, 1);
+    --gray-medium: hsla(0, 0%, 50%, 1);
+    --gray-light: hsla(0, 0%, 64%, 1);
+
+    /* BRAND */
+    --brand-green: hsla(143, 100%, 34%, 1); /*#00AE42*/
+    --brand-blue: hsla(207, 87%, 23%, 1); /*#0D3E66*/
+
+    /* BUTTONS */
+    --button-white: hsla(0, 0%, 100%, 1); /*#FFFFFF*/
+    --button-dark-gray: hsla(0, 0%, 26%, 1); /*#434343*/
+    --button-light-gray: hsla(223, 14%, 73%, 1); /*#ABB3C7*/
+    --button-gray: hsla(240, 4%, 19%, 1); /*#2F2F31*/
+    --button-black: hsla(240, 13%, 5%, 1); /*#0D0D0F*/
+    --button-destructive: hsla(0, 54%, 67%, 1); /*#E96B6B*/
+    --button-disabled: hsla(220, 21%, 89%, 1); /*#DDE1E9*/
+    --button-ghost: hsla(222, 56%, 96%, 1); /*#F1F4FB*/
+    --button-ghost-disabled: hsla(221, 42%, 93%, 1); /*#E4E9F4*/
+
+    /* TEXT */
+    --gray-primary: hsla(0, 0%, 32%, 1); /*#515151*/
+    --gray-secondary: hsla(0, 0%, 50%, 1); /*#7F7F7F*/
+    --gray-muted: hsla(0, 0%, 64%, 1); /*#A4A4A4*/
+    --gray-highlight: hsla(0, 0%, 100%, 1); /*#FFFFFF*/
+
+    /* BACKGROUND */
+    --background-primary: hsla(216, 2%, 95%, 1); /*#F1F3F6*/
+    --background-sidebar: hsla(0, 0%, 100%, 1); /*#FFFFFF*/
+    --background-skeleton: hsla(0, 0%, 95%, 1); /*#F3F3F3*/
+
+    /* ACTION */
+    --action-primary: hsla(207, 74%, 50%, 1); /*#3586C8*/
+    --action-hover: hsla(207, 11%, 94%, 1); /*#E2F2FF*/
+    --action-focus: hsla(207, 28%, 81%, 1); /*#AED3F1*/
+
+    /* DESTRUCTIVE */
+    --destructive-primary: hsla(0, 52%, 63%, 1); /*#D86767*/
+
+    /* MODAL */
+    --success-green: hsla(142, 84%, 92%, 1); /*#DCFCE8*/
+    --error-red: hsla(0, 56%, 90%, 1); /*#F5DBDB*/
+    --modal-gray-dark: hsla(0, 0%, 40%, 1); /*#F5DBDB*/
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background;
+  }
+}
