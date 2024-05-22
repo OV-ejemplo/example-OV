@@ -1,7 +1,7 @@
 'use client';
 import { Box, Container } from '@radix-ui/themes';
-import { Footer } from '@stetamalo/plan-seguro-components.ui/Footer';
-import { Text } from '@stetamalo/plan-seguro-components.ui/Text';
+import { Footer } from '@ov-ejemplo/storybook/components/Footer';
+import { Text } from '@ov-ejemplo/storybook/components/Text';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';

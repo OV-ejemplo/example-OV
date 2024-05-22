@@ -1,10 +1,10 @@
-import { Button } from '@stetamalo/plan-seguro-components.ui/Button';
+import { Button } from '@ov-ejemplo/storybook/components/Button';
 
 import {
   Card,
   CardContent,
   CardHeader,
-} from '@stetamalo/plan-seguro-components.ui/Card';
+} from '@ov-ejemplo/storybook/components/Card';
 import {
   Select,
   SelectContent,
@@ -12,8 +12,8 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@stetamalo/plan-seguro-components.ui/Select';
-import { Text } from '@stetamalo/plan-seguro-components.ui/Text';
+} from '@ov-ejemplo/storybook/components/Select';
+import { Text } from '@ov-ejemplo/storybook/components/Text';
 import { ArrowRightIcon, InfoIcon } from 'lucide-react';
 import React from 'react';
 
