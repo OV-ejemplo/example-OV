@@ -2,8 +2,8 @@ import type { Config } from 'tailwindcss';
 const { fontFamily } = require('tailwindcss/defaultTheme');
 const config: Config = {
   content: [
-    './node_modules/@ov-ejemplo/storybook/components/**/*.{js,ts,jsx,tsx}', //Añadir
-    './node_modules/@ov-ejemplo/storybook/components/*.{js,ts,jsx,tsx}', //Añadir
+    './node_modules/@ov-ejemplo/storybook/components/**/*.{js,ts,jsx,tsx}',
+    './node_modules/@ov-ejemplo/storybook/components/*.{js,ts,jsx,tsx}',
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
